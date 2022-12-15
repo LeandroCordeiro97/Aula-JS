@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DETRAN</title>
+    
+</head>
+<body>
+    <H1>Nacionalidade</H1>
+    País de origem: <input type="text" name="txtvel" id="txtvel"> 
+   <input type="button" value="Verificar" onclick="calcular()">
+    <div id="res">
+
+    </div>
+    
+    <script>
+        function calcular (){
+            var pais = Brasil
+            var txtv =window.document.querySelector ('input#txtvel')
+            var res=window.document.querySelector ('div#res')
+            var vel = Number(txtv.value)
+            res.innerHTML = `<p>Vcoé </p>`
+
+            if (pais == 'Brasil') {
+                res.innerHTML = `<p> é <strong>Brasileiro </strong>`
+            }
+           
+            else {
+                res.innerHTML = `<p> é <strong>estrangeiro </strong>`
+}
+
+        }
+    </script>
+    
+    
+</body>
+</html>
